@@ -1,0 +1,10 @@
+
+@use '@/assets/settings' as *;
+
+.wgallery__title {
+  font:       100 83px/120% 'Righteous';
+  @include font-size-adapt(83);
+  text-align: center;
+  color:      $color-blue-1;
+  padding:    92px 0 90px;
+}

@@ -1,0 +1,16 @@
+
+@use '@/assets/settings' as *;
+@use '@/assets/main_title/main_title__title';
+@use '@/assets/main_title/main_title__body';
+@use '@/assets/main_title/main_title__sub';
+@use '@/assets/main_title/main_title__text';
+@use '@/assets/main_title/main_title__button';
+@use '@/assets/main_title/main_title__deco';
+
+.main_title {
+  background: $color-white-1;
+
+  aspect-ratio: 1440 / 677;
+
+  position: relative;
+}

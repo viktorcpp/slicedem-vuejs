@@ -1,0 +1,10 @@
+
+@use '@/assets/settings' as *;
+
+.main_title__button {
+  padding: 0 86px;
+
+  @media (max-width: $page-width-480) {
+    transform: scale(0.6);
+  }
+}

@@ -1,0 +1,15 @@
+
+@use '@/assets/settings' as *;
+
+.creat__video {
+  -webkit-box-shadow: 2px 4px 25px 3px rgba(0,0,0,0.28);
+  -moz-box-shadow: 2px 4px 25px 3px rgba(0,0,0,0.28);
+  box-shadow: 2px 4px 25px 3px rgba(0,0,0,0.28);
+
+  border-radius: 54px;
+}
+
+.creat__video_main {
+  max-width:  100%;
+  max-height: 100%;
+}

@@ -1,0 +1,22 @@
+
+@use '@/assets/settings' as *;
+@use '@/assets/header/header__logo';
+@use '@/assets/header/header__nav';
+@use '@/assets/header/header__search';
+
+header {
+  background: $color-blue-1;
+  color:      $color-white-1;
+
+  min-height: 118px;
+
+  display:         flex;
+  flex-direction:  row;
+  align-items:     stretch;
+  justify-items:   stretch;
+  justify-content: stretch;
+
+  @media (max-width: $page-width-1280) {
+    min-height: 80px;
+  }
+}

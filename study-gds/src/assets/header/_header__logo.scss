@@ -1,0 +1,24 @@
+
+@use '@/assets/settings' as *;
+
+.header__logo {
+  display:         flex;
+  align-items:     center;
+  justify-content: right;
+  flex-basis:      254px;
+
+  @media (max-width: $page-width-1280) {
+    justify-content: center;
+
+    flex-basis:      160px;
+  }
+}
+
+.header__logo_link {
+  //
+}
+
+.header__logo_img {
+  width:  146px;
+  height: auto;
+}

@@ -1,0 +1,24 @@
+
+@use '@/assets/settings' as *;
+
+.header__search {
+  display:         flex;
+  align-items:     center;
+  justify-content: left;
+  flex-basis:      195px;
+  flex-grow:       0;
+
+  @media (max-width: $page-width-1280) {
+    flex-basis: 140px;
+
+    justify-content: space-around;
+  }
+}
+
+.header__mobile {
+  display: none;
+
+  @media (max-width: $page-width-1280) {
+    display: unset;
+  }
+}

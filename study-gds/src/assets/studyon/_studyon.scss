@@ -1,0 +1,52 @@
+
+@use '@/assets/settings' as *;
+
+@use '@/assets/studyon/studyon__title';
+@use '@/assets/studyon/studyon__list';
+@use '@/assets/studyon/studyon__sub';
+@use '@/assets/studyon/studyon__subadd';
+@use '@/assets/studyon/studyon__btn_app';
+
+.studyon {
+  background: $color-blue-1;
+  color:      $color-white-1;
+
+  display:         flex;
+  flex-direction:  row;
+  align-items:     stretch;
+  justify-items:   stretch;
+  justify-content: stretch;
+}
+
+.studyon__cont {
+  flex-basis: 50%;
+  box-sizing: border-box;
+  padding:    129px 0 219px 9.4%;
+
+  @media (max-width: $page-width-1280) {
+    padding:    60px 0 60px 4%;
+    flex-basis: 65%;
+  }
+
+  @media (max-width: $page-width-768) {
+    flex-basis: 100%;
+    padding:    20px 0 20px 4%;
+  }
+}
+
+.studyon__img {
+  display:     flex;
+  flex-basis:  50%;
+  align-items: center;
+  padding:     50px 0;
+
+  img {
+    display:    block;
+    max-width:  100%;
+    max-height: 100%;
+  }
+
+  @media (max-width: $page-width-768) {
+    display: none;
+  }
+}

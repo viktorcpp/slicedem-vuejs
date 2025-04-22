@@ -1,0 +1,29 @@
+
+@use '@/assets/settings' as *;
+
+.main_title__title {
+  font: normal 83px/100% 'Righteous';
+  @include font-size-adapt(83);
+
+  padding: 0 100px;
+  margin:  0 0 23px;
+
+  @media (max-width: $page-width-1280) {
+    margin:  0 0 10px;
+  }
+
+  @media (max-width: $page-width-1024) {
+    margin:  0 0 10px;
+
+    @include font-size-adapt(73);
+  }
+
+  @media (max-width: $page-width-480) {
+    padding: 0 0 0 30px;
+    margin:  3px;
+
+    br {
+      display: none;
+    }
+  }
+}

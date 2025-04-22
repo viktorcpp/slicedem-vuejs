@@ -1,0 +1,40 @@
+
+@use '@/assets/base.css';
+@use '@/assets/settings' as *;
+@use '@/assets/fonts';
+@use '@/assets/header/header';
+@use '@/assets/footer/footer';
+@use '@/assets/navbar/navbar';
+@use '@/assets/main_title/main_title';
+@use '@/assets/aboutus/aboutus';
+@use '@/assets/wgallery/wgallery';
+@use '@/assets/study/study';
+@use '@/assets/studyon/studyon';
+@use '@/assets/creat/creat';
+
+* {
+  //transition: 0.3s width ease-in-out;
+  //transition: 0.3s height ease-in-out;
+  //transition: 0.3s font-size ease-in-out;
+}
+
+body {
+  display:         flex;
+  flex-direction:  row;
+  align-items:     stretch;
+  justify-content: center;
+  justify-items:   center;
+
+  font: normal 12px/120% 'Poppins';
+}
+
+#app {
+
+  display:        flex;
+  flex-direction: column;
+  flex-basis:     $base-page-width;
+}
+
+main {
+  flex-grow: 1;
+}

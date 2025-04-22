@@ -1,0 +1,71 @@
+
+@use '@/assets/settings' as *;
+
+.study__main {
+  flex-grow:      1;
+  display:        flex;
+  flex-direction: column;
+  align-items:    center;
+
+  color: $color-white-1;
+  text-align: center;
+
+  padding: 145px 0 90px;
+
+  @media (max-width: $page-width-1280) {
+    padding: 60px 0 50px;
+  }
+
+  @media (max-width: $page-width-768) {
+    padding: 20px 0;
+  }
+}
+
+.study__title {
+  font: normal 67px/120% 'Righteous';
+  @include font-size-adapt(67);
+
+  margin:  0 0 37px;
+  padding: 0 10px;
+
+  @media (max-width: $page-width-1024) {
+    @include font-size-adapt(80);
+  }
+
+  @media (max-width: $page-width-768) {
+    @include font-size-adapt(110);
+
+    margin-bottom: 12px;
+  }
+}
+
+.study__text {
+  font: 100 25px/120% 'Poppins';
+  @include font-size-adapt(25);
+
+  padding: 0 200px;
+  margin:  0 0 82px;
+
+  @media (max-width: $page-width-1280) {
+    padding: 0 80px;
+    margin:  0 0 42px;
+  }
+
+  @media (max-width: $page-width-1024) {
+    @include font-size-adapt(40);
+  }
+
+  @media (max-width: $page-width-768) {
+    @include font-size-adapt(60);
+
+    margin-bottom: 12px;
+    padding:       0 16px;
+  }
+}
+
+.study__button {
+  text-transform: uppercase;
+  font-weight:    400;
+
+  padding: 0 60px;
+}

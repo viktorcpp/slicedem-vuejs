@@ -1,0 +1,17 @@
+
+@use '@/assets/settings' as *;
+
+.studyon__title {
+  font: 100 83px/110% 'Righteous';
+  @include font-size-adapt(83);
+
+  margin: 0 0 125px;
+
+  @media (max-width: $page-width-1280) {
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: $page-width-768) {
+    @include font-size-adapt(95);
+  }
+}

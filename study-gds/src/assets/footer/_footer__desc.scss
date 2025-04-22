@@ -1,0 +1,37 @@
+
+@use '@/assets/settings' as *;
+
+.footer__desc {
+  display:         flex;
+  flex-direction:  column;
+  flex-basis:      640px;
+  flex-grow:       0;
+  align-items:     flex-start;
+  justify-content: left;
+
+  box-sizing: border-box;
+  padding:    157px 80px 10px 102px;
+
+  @media (max-width: $page-width-1280) {
+    padding: 100px 80px 10px;
+  }
+
+  @media (max-width: $page-width-1024) {
+    padding: 20px;
+  }
+}
+
+.footer__desc_text {
+  font: normal 25px/120% 'Poppins';
+  @include font-size-adapt(25);
+
+  margin: 0 0 40px;
+
+  @media (max-width: $page-width-1024) {
+    @include font-size-adapt(28);
+  }
+
+  @media (max-width: $page-width-768) {
+    @include font-size-adapt(50);
+  }
+}

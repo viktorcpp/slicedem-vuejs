@@ -1,0 +1,48 @@
+
+@use '@/assets/settings' as *;
+
+.wgallery__pager {
+  display:         flex;
+  flex-direction:  row;
+  align-items:     center;
+  justify-items:   center;
+  justify-content: center;
+  flex-wrap:       wrap;
+  row-gap:         16px;
+
+  padding: 36px 0 0;
+
+  @media (max-width: $page-width-1024) {
+    padding-top: 0;
+  }
+}
+
+.wgallery__pager_btn {
+  text-transform: capitalize;
+
+  padding: 0 64px;
+  margin:  0 40px;
+
+  @media (max-width: $page-width-1024) {
+    margin: 0 100%;
+  }
+}
+
+.wgallery__pager_item {
+  width:         32px;
+  height:        32px;
+  margin:        0 10px;
+  border-radius: 50%;
+  transform:     scale(0.4375);
+  transition:    0.3s transform linear;
+
+  background: $color-blue-1;
+
+  &:hover {
+    transform: scale(1);
+  }
+}
+
+.wgallery__pager_item--active {
+  transform: scale(1);
+}

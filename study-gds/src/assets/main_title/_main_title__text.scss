@@ -1,0 +1,35 @@
+
+@use '@/assets/settings' as *;
+
+.main_title__text {
+  font: 100 25px/120% 'Poppins';
+  @include font-size-adapt(25);
+
+  padding: 0 430px;
+  margin:  0 0 45px;
+
+  @media (max-width: $page-width-1280) {
+    padding: 0 230px;
+    margin:  0 0 10px;
+  }
+
+  @media (max-width: $page-width-768) {
+    @include font-size-adapt(35);
+
+    padding: 0 130px;
+  }
+
+  @media (max-width: $page-width-480) {
+    @include font-size-adapt(45);
+
+    padding: 0 60px;
+    margin:  0;
+  }
+
+  @media (max-width: $page-width-320) {
+    @include font-size-adapt(55);
+
+    padding: 0 30px;
+    margin:  -5px;
+  }
+}

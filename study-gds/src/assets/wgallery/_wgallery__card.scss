@@ -1,0 +1,47 @@
+
+@use '@/assets/settings' as *;
+
+.wgallery__card {
+  aspect-ratio: 350 / 690;
+
+  text-decoration: none;
+
+  transition: 0.3s opacity ease-in-out;
+}
+
+.wgallery__card_img {
+  -webkit-box-shadow: 2px 4px 25px 3px rgba(0,0,0,0.28);
+  -moz-box-shadow: 2px 4px 25px 3px rgba(0,0,0,0.28);
+  box-shadow: 2px 4px 25px 3px rgba(0,0,0,0.28);
+
+  max-width:  100%;
+  max-height: 100%;
+}
+
+.wgallery__card_title {
+  font:  400 33px/120% 'Poppins';
+  color: $color-blue-1;
+  @include font-size-adapt(33);
+
+  display:        flex;
+  flex-direction: column;
+  align-items:    center;
+
+  padding: 36px 0 0;
+
+  @media (max-width: $page-width-1024) {
+    padding-top: 10px;
+  }
+
+  @media (max-width: $page-width-768) {
+    @include font-size-adapt(60);
+  }
+}
+
+.wgallery__card_title_sub {
+  @include font-size-adapt(23);
+
+  @media (max-width: $page-width-768) {
+    @include font-size-adapt(40);
+  }
+}

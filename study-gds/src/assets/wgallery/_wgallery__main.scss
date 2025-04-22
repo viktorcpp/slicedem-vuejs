@@ -1,0 +1,19 @@
+
+@use '@/assets/settings' as *;
+
+.wgallery__main {
+  margin: 0 9.861%;
+
+  display:               grid;
+  grid-template-columns: repeat( 3, 1fr );
+  grid-template-rows:    auto auto;
+  column-gap:            46px;
+
+  &:hover .wgallery__card:not(:has(:hover)) {
+    opacity: 0.75;
+  }
+
+  @media (max-width: $page-width-768) {
+    grid-template-columns: repeat( 2, 1fr );
+  }
+}

@@ -1,0 +1,20 @@
+
+@use '@/assets/settings' as *;
+
+.studyon__subadd {
+  font:       100 42px/120% 'Righteous';
+  @include font-size-adapt(42);
+  text-align: center;
+  padding:    0 100px 0 0;
+  margin:     0 0 51px;
+
+  @media (max-width: $page-width-1280) {
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: $page-width-768) {
+    @include font-size-adapt(80);
+
+    padding-right: 20px;
+  }
+}

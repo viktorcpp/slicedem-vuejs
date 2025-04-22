@@ -1,0 +1,15 @@
+
+@use '@/assets/settings' as *;
+
+.aboutus__ph {
+  grid-column: 1 / span 2;
+
+  display:         flex;
+  justify-content: right;
+  align-items:     flex-end;
+
+  img {
+    max-height: 100%;
+    max-width:  100%;
+  }
+}

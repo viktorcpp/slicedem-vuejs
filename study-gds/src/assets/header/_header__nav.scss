@@ -1,0 +1,48 @@
+
+@use '@/assets/settings' as *;
+
+.header__nav {
+  display:         flex;
+  flex-grow:       1;
+  align-items:     stretch;
+  justify-items:   stretch;
+  justify-content: stretch;
+
+  line-height: 120%;
+
+  @include font-size-adapt(21);
+  text-transform: uppercase;
+
+  @media (max-width: $page-width-1280) {
+    @include font-size-adapt(25);
+  }
+
+  @media (max-width: $page-width-768) {
+    @include font-size-adapt(50);
+  }
+}
+
+.header__nav_list {
+  display:         flex;
+  flex-grow:       1;
+  align-items:     center;
+  justify-content: space-around;
+
+  list-style: none;
+  margin:     0;
+  padding:    0;
+
+  @media (max-width: $page-width-768) {
+    flex-wrap: wrap;
+    align-content: center;
+  }
+}
+
+.header__nav_list_item {
+  //
+}
+
+.header__nav_link {
+  color:           inherit;
+  text-decoration: none;
+}

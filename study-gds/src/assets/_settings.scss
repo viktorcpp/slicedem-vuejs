@@ -1,0 +1,59 @@
+
+@use "sass:math";
+
+$base-page-width: 1440px;
+
+$page-width-1280: 1280px;
+$page-width-1024: 1024px;
+$page-width-768:  768px;
+$page-width-480:  480px;
+$page-width-320:  320px;
+
+$color-blue-1:   rgba( 43, 60, 83, 1 );
+$color-blue-1-a: rgba( 43, 60, 83, 0.8 );
+
+$color-white-1:   rgba( 255, 255, 255, 1 );
+$color-white-1-a: rgba( 255, 255, 255, 0.8 );
+
+$color-green-1:   rgba( 43, 155, 94, 1 );
+$color-green-1-a: rgba( 43, 155, 94, 0.8 );
+
+$color-green-2:   rgba( 43, 155, 94, 1 );
+$color-green-2-a: rgba( 94, 154, 98, 0.8 );
+
+.fill-white {
+  fill: $color-white-1
+}
+
+.anim-opacity08 {
+  &:hover {
+    opacity:    0.8;
+    transition: 0.3s opacity ease-in-out;
+  }
+}
+
+.button {
+  border:        none;
+  background:    $color-blue-1;
+  border-radius: 25px;
+  min-height:    50px;
+  padding:       0 25px;
+  cursor:        pointer;
+
+  font:       100 21px/120% 'Poppins';
+  color:      $color-white-1;
+  text-align: center;
+}
+
+.button_white_green {
+  @extend .button;
+
+  background: $color-white-1;
+  color:      $color-green-1;
+}
+
+@mixin font-size-adapt($base-size) {
+  $size: (math.div($base-size, 1440) * 100) + vw;
+  $vase: $base-size + px;
+  font-size: min( $size, $vase );
+}

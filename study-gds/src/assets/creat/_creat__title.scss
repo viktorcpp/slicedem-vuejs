@@ -1,0 +1,21 @@
+
+@use '@/assets/settings' as *;
+
+.creat__title {
+  font:       normal 63px/120% 'Righteous';
+  @include font-size-adapt(63);
+  color:      $color-blue-1;
+  text-align: center;
+
+  padding: 75px 0;
+
+  @media (max-width: $page-width-1280) {
+    @include font-size-adapt(75);
+
+    padding: 30px 0;
+  }
+
+  @media (max-width: $page-width-768) {
+    @include font-size-adapt(100);
+  }
+}

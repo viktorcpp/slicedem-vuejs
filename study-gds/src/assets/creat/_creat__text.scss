@@ -1,0 +1,21 @@
+
+@use '@/assets/settings' as *;
+
+.creat__text {
+  font: 100 25px/120% 'Poppins';
+  @include font-size-adapt(25);
+  color:       $color-blue-1;
+  padding:     0 147px 0 0;
+  margin:      0 0 72px;
+
+  @media (max-width: $page-width-1280) {
+    @include font-size-adapt(30);
+
+    margin-bottom: 20px;
+    padding-right: 20px;
+  }
+
+  @media (max-width: $page-width-768) {
+    @include font-size-adapt(50);
+  }
+}

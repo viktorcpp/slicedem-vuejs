@@ -1,0 +1,13 @@
+
+@use '@/assets/settings' as *;
+
+.aboutus__img {
+  display:         flex;
+  align-items:     center;
+  justify-content: right;
+
+  img {
+    max-height: 100%;
+    max-width:  100%;
+  }
+}

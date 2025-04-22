@@ -1,0 +1,44 @@
+
+@use '@/assets/settings' as *;
+
+.studyon__list {
+  padding:    0;
+  list-style: none;
+  margin:     0 0 108px;
+
+  @media (max-width: $page-width-1280) {
+    margin-bottom: 30px;
+  }
+}
+
+.studyon__list_item {
+  font: 100 25px/110% 'Poppins';
+  @include font-size-adapt(25);
+
+  margin:  0 0 39px;
+  padding: 0 30px 0 0;
+
+  &:last-child {
+    margin: 0;
+  }
+
+  &:before {
+    display:       inline-block;
+    content:       '';
+    width:         6px;
+    height:        6px;
+    background:    $color-white-1;
+    border-radius: 50%;
+    margin:        0 7px 0 0;
+    position:      relative;
+    top:           -5px
+  }
+
+  @media (max-width: $page-width-1280) {
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: $page-width-768) {
+    @include font-size-adapt(60);
+  }
+}

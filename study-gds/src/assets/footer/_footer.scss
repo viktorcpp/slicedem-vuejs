@@ -1,0 +1,55 @@
+
+@use '@/assets/settings' as *;
+@use '@/assets/footer/footer__desc';
+@use '@/assets/footer/footer__list';
+@use "@/assets/footer/footer__soc";
+
+footer {
+  @include font-size-adapt(25);
+
+  background: $color-blue-1;
+
+  min-height: 565px;
+
+  display:         flex;
+  flex-direction:  row;
+  flex-grow:       0;
+  align-items:     stretch;
+  justify-content: stretch;
+
+  color: $color-white-1;
+
+  @media (max-width: $page-width-1280) {
+    min-height: 400px;
+  }
+
+  @media (max-width: $page-width-1024) {
+    min-height: unset;
+    flex-wrap: wrap;
+  }
+}
+
+.footer__title {
+  font: normal 25px/120% 'Righteous';
+  @include font-size-adapt(25);
+
+  margin: 0 0 28px;
+
+  @media (max-width: $page-width-1024) {
+    @include font-size-adapt(30);
+
+    margin: 0 0 12px;
+  }
+
+  @media (max-width: $page-width-768) {
+    @include font-size-adapt(60);
+  }
+}
+
+.footer__title_desc {
+  @include font-size-adapt(29);
+
+  @media (max-width: $page-width-768) {
+    @include font-size-adapt(64);
+  }
+}

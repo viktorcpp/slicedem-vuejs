@@ -1,0 +1,35 @@
+
+@use '@/assets/settings' as *;
+
+@use '@/assets/study/study__main';
+
+.study {
+  background: $color-green-1;
+
+  display:         flex;
+  flex-direction:  column;
+  align-items:     stretch;
+  justify-content: stretch;
+  justify-items:   stretch;
+
+  div:first-child {
+    flex-grow: 0;
+
+    img {
+      max-width:  100%;
+      max-height: 100%;
+      display:    block;
+      float:      right;
+    }
+  }
+
+  div:last-child {
+    flex-grow: 0;
+
+    img {
+      max-width:  100%;
+      max-height: 100%;
+      display:    block;
+    }
+  }
+}

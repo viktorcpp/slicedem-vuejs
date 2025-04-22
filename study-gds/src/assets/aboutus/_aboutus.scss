@@ -1,0 +1,20 @@
+
+@use '@/assets/settings' as *;
+@use '@/assets/aboutus/aboutus__img';
+@use '@/assets/aboutus/aboutus__cont';
+@use '@/assets/aboutus/aboutus__ph';
+
+.aboutus {
+  background: $color-green-1;
+
+  aspect-ratio: 1440 / 963;
+
+  display: grid;
+  grid-template-columns: 45.416% auto;
+  grid-template-rows:    82.24299% auto;
+  column-gap:            132px;
+
+  @media (max-width: $page-width-1280) {
+    column-gap: 40px;
+  }
+}
